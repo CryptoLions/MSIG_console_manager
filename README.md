@@ -2,7 +2,7 @@
 
 Bash scripts to create/review/approve/cancel/execute msigs
 
-For FIO chain switch to branch [FIO](https://github.com/CryptoLions/MSIG_console_manager/tree/FIO)
+For FIO chain please switch to [FIO](https://github.com/CryptoLions/MSIG_console_manager/tree/FIO) branch
 
 1. Edit 0_CONFIG.json
 - proposer: account name who creates msig
