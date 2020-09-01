@@ -1,0 +1,10 @@
+./clio.sh set contract eosio /opt/FIO/bin/Contracts/last/fio.system/ -p eosio
+./clio.sh set contract fio.token /opt/FIO/bin/Contracts/last/fio.token/ -p fio.token
+./clio.sh set contract eosio.msig /opt/FIO/bin/Contracts/last/eosio.msig/ -p eosio.msig
+./clio.sh set contract eosio.wrap /opt/FIO/bin/Contracts/last/eosio.wrap/ -p eosio.wrap
+./clio.sh set contract fio.tpid /opt/FIO/bin/Contracts/last/fio.tpid/ -p fio.tpid
+./clio.sh set contract fio.address /opt/FIO/bin/Contracts/last/fio.address/ -p fio.address
+./clio.sh set contract fio.fee /opt/FIO/bin/Contracts/last/fio.fee/ -p fio.fee
+./clio.sh set contract fio.reqobt /opt/FIO/bin/Contracts/last/fio.request.obt/ -p fio.reqobt
+./clio.sh set contract fio.treasury /opt/FIO/bin/Contracts/last/fio.treasury/ -p fio.treasury
+./clio.sh set contract fio.whitelst /opt/FIO/bin/Contracts/last/fio.whitelist/ -p fio.whitelst

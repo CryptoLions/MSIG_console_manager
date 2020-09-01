@@ -1,0 +1,20 @@
+{
+    "proposer": "lion4uxxfbqo",
+    "proposalName": "createfee",
+    "approver": "lion4uxxfbqo",
+    "msig_expiration_h": 168,
+    "actions_list_file": "1_actions_list",
+    "requireBPsapprove": 1,
+    "approvers_list": "{\"actor\": \"acc1\", \"permission\": \"active\"},{\"actor\": \"acc2\", \"permission\": \"active\"}",
+    
+    "clio": "/opt/FIO/bin/bin/clio",
+    "walletHost": "http://127.0.0.1:553",
+    "nodeHost": "https://fio.cryptolions.io:443",
+
+    "feePropose": 0,
+    "feeApprove": 400000000,
+    "feeCancel": 1000000000,
+    "feeExec": 400000000
+
+}
+
