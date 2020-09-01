@@ -1,10 +1,13 @@
 #!/bin/bash
 ################################################################################
+# MSIG Console Manager
 #
 # Scrip Created by http://CryptoLions.io
 # For EOSIO Blockchains
 #
-# https://github.com/CryptoLions/
+# Check Readme for more info.
+#
+# https://github.com/CryptoLions/MSIG_console_manager
 #
 ################################################################################
 
