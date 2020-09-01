@@ -1,7 +1,7 @@
-# MSIG_console_manager FIO
+# MSIG console manager FIO
 Bash scripts to create/review/approve/cancel/execute msigs
 
-
+FIO edition for other EOSIO chains please switch to [master](https://github.com/CryptoLions/MSIG_console_manager/tree/master) branch
 1. Edit 0_CONFIG.json
 - proposer: account name who creates msig
 - proposalName: msig name (chars a-z.1-5 allowed only, max length 12 symbols)
