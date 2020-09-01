@@ -1,13 +1,15 @@
 #!/bin/bash
 ################################################################################
+# MSIG Console Manager
 #
 # Scrip Created by http://CryptoLions.io
-# For EOSIO Blockchains
+# For FIO Blockchain
 #
-# https://github.com/CryptoLions/
+# Check Readme for more info.
+#
+# https://github.com/CryptoLions/MSIG_console_manager/tree/FIO
 #
 ################################################################################
-
 
 proposer=$( jq -r '.proposer' "0_CONFIG.json" )
 proposalName=$( jq -r '.proposalName' "0_CONFIG.json" )
