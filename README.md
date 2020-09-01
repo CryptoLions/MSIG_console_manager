@@ -1,8 +1,8 @@
-# MSIG_console_manager EOSIO chains
+# MSIG console manager EOSIO chains
 
 Bash scripts to create/review/approve/cancel/execute msigs
 
-For FIO chain switch to branch FIO
+For FIO chain switch to branch [FIO](https://github.com/CryptoLions/MSIG_console_manager/tree/FIO)
 
 1. Edit 0_CONFIG.json
 - proposer: account name who creates msig
