@@ -1,0 +1,14 @@
+{
+    "proposer": "lioninjungle",
+    "proposalName": "testmsig",
+    "approver": "ohtigertiger",
+    "msig_expiration_h": 168,
+    "actions_list_file": "1_actions_list",
+    "requireBPsapprove": 0,
+    "approvers_list": "{\"actor\": \"lioninjungle\", \"permission\": \"active\"},{\"actor\": \"ohtigertiger\", \"permission\": \"active\"},{\"actor\": \"iliketurtles\", \"permission\": \"active\"},{\"actor\": \"gorillapower\", \"permission\": \"active\"},{\"actor\": \"hungryolddog\", \"permission\": \"active\"},{\"actor\": \"ssssssssnake\", \"permission\": \"active\"},{\"actor\": \"thebluewhale\", \"permission\": \"active\"},{\"actor\": \"eosdacserval\", \"permission\": \"active\"},{\"actor\": \"eosbarcelona\", \"permission\": \"active\"},{\"actor\": \"alohaeostest\", \"permission\": \"active\"},{\"actor\": \"eosarabianet\", \"permission\": \"active\"},{\"actor\": \"atticlabjbpn\", \"permission\": \"active\"},{\"actor\": \"eosphereiobp\", \"permission\": \"active\"},{\"actor\": \"ivote4eosusa\", \"permission\": \"active\"},{\"actor\": \"junglesweden\", \"permission\": \"active\"},{\"actor\": \"eoscannonchn\", \"permission\": \"active\"},{\"actor\": \"eosnationftw\", \"permission\": \"active\"},{\"actor\": \"decentrawise\", \"permission\": \"active\"},{\"actor\": \"eosiodetroit\", \"permission\": \"active\"},{\"actor\": \"eosriobrazil\", \"permission\": \"active\"},{\"actor\": \"teamgreymass\", \"permission\": \"active\"},{\"actor\": \"batinthedark\", \"permission\": \"active\"},{\"actor\": \"bighornsheep\", \"permission\": \"active\"},{\"actor\": \"bigpolarbear\", \"permission\": \"active\"},{\"actor\": \"clevermonkey\", \"permission\": \"active\"},{\"actor\": \"funnyhamster\", \"permission\": \"active\"},{\"actor\": \"hippopotamus\", \"permission\": \"active\"},{\"actor\": \"jumpingfrogs\", \"permission\": \"active\"},{\"actor\": \"littlerabbit\", \"permission\": \"active\"},{\"actor\": \"proudrooster\", \"permission\": \"active\"}",
+    
+    "cleos": "/opt/bin/bin/cleos",
+    "walletHost": "http://127.0.0.1:5553",
+    "nodeHost": "https://jungle3.cryptolions.io:443"
+}
+
