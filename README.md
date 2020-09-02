@@ -4,7 +4,7 @@ Bash scripts to create/review/approve/cancel/execute msigs
   
 This repo is for FIO.  For other EOSIO chains, please switch to [master](https://github.com/CryptoLions/MSIG_console_manager/tree/master) branch.
 
-_Note:_ if there is a backslash ('\') in the data of a command, you may have to use a double backslash ('\\') for the script to work.
+_Note:_ if there is a backslash `\` in the data of a command, you may have to use a double backslash `\\` for the script to work.
   
 # 1. Edit 0_CONFIG.json
 - proposer: account name who creates msig
