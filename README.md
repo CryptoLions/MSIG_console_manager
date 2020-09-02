@@ -4,6 +4,8 @@ Bash scripts to create/review/approve/cancel/execute msigs
 
 For FIO chain please switch to [FIO](https://github.com/CryptoLions/MSIG_console_manager/tree/FIO) branch
 
+_Note:_ if there is a backslash `\` in the data of a command, you may have to use a double backslash `\\` for the script to work.
+
 # 1. Edit 0_CONFIG.json
 - proposer: account name who creates msig
 - proposalName: msig name (chars a-z.1-5 allowed only, max length 12 symbols)
