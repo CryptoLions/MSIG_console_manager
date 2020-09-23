@@ -28,7 +28,7 @@ fi
 expire_date="$(date -d "+$EXPIRATION_IN_H hour" +%Y-%m-%dT%H:%M:%S)"
 
 ## Any trx just to create TRX Body
-TRX_BODY=$(./cleos.sh push action eosio setram '[1]' -p -s -d -j 2>/dev/null)
+TRX_BODY=$(./cleos.sh push action eosio setram '[1]' -p eosio -s -d -j 2>/dev/null)
 TRX_BODY=$(echo $TRX_BODY | jq -c '.expiration=$expire | del(.actions[])' --arg expire "$expire_date")
 
 while read actions; do
