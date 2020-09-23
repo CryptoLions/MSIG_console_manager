@@ -9,7 +9,7 @@
 ################################################################################
 
 
-$( jq -r '.' "0_CONFIG.json" )
+#$( jq -r '.' "0_CONFIG.json" )
 
 CLEOS=$( jq -r '.cleos' "0_CONFIG.json" )
 WALLETHOST=$( jq -r '.walletHost' "0_CONFIG.json" )
