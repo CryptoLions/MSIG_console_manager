@@ -33,7 +33,7 @@ fi
 expire_date="$(date -d "+$EXPIRATION_IN_H hour" +%Y-%m-%dT%H:%M:%S)"
 
 ## Any trx just to create TRX Body
-TRX_BODY=$(./clio.sh push action eosio init '[1,"4,EOS"]' -p -s -d -j 2>/dev/null)
+TRX_BODY=$(./clio.sh push action eosio init '[1,"4,EOS"]' -p eosio -s -d -j 2>/dev/null)
 TRX_BODY=$(echo $TRX_BODY | jq -c '.expiration=$expire | del(.actions[])' --arg expire "$expire_date")
 
 
