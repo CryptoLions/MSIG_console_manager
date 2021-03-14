@@ -33,11 +33,14 @@ TRX_BODY=$(echo $TRX_BODY | jq -c '.expiration=$expire | del(.actions[])' --arg 
 
 while read actions; do
     act_res=$(eval $actions -j -s -d  2>/dev/null)
-    tAct=$(echo $act_res | jq '.actions' | jq .)
-    TRX_BODY=$(echo $TRX_BODY | jq '.actions+=$nacts' --argjson nacts "$tAct")
+    echo $act_res > acts.json
+    tAct=$(cat acts.json | jq '.actions' | jq .)
+    echo $tAct > input.json
+    R=$(jq  '.actions+=input' trx.json input.json )
+    echo $R | jq . > trx.json
+    rm ./acts.json
+    rm ./input.json
 done < $actions_list_file
-
-echo $TRX_BODY | jq . > trx.json
 
 ./cleos.sh multisig propose_trx $proposalName "[$APPROVERS]" trx.json $proposer -p $proposer
 
