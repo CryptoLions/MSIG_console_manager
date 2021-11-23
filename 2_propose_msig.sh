@@ -36,14 +36,19 @@ expire_date="$(date -d "+$EXPIRATION_IN_H hour" +%Y-%m-%dT%H:%M:%S)"
 TRX_BODY=$(./clio.sh push action eosio init '[1,"4,EOS"]' -p eosio -s -d -j 2>/dev/null)
 TRX_BODY=$(echo $TRX_BODY | jq -c '.expiration=$expire | del(.actions[])' --arg expire "$expire_date")
 
+echo $TRX_BODY > trx.json
 
 while read actions; do
     act_res=$(eval $actions -j -s -d  2>/dev/null)
-    tAct=$(echo $act_res | jq '.actions' | jq .)
-    TRX_BODY=$(echo $TRX_BODY | jq '.actions+=$nacts' --argjson nacts "$tAct")
+    echo $act_res > acts.json
+    tAct=$(cat acts.json | jq '.actions' | jq .)
+    echo $tAct > input.json
+    R=$(jq  '.actions+=input' trx.json input.json )
+    echo $R | jq . > trx.json
+    rm ./acts.json
+    rm ./input.json
 done < $actions_list_file
 
-echo $TRX_BODY | jq . > trx.json
 ./clio.sh multisig propose_trx $proposalName "[$APPROVERS]" $feePropose trx.json $proposer -p $proposer
 
 #rm trx.json
