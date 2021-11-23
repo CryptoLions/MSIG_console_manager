@@ -31,6 +31,8 @@ expire_date="$(date -d "+$EXPIRATION_IN_H hour" +%Y-%m-%dT%H:%M:%S)"
 TRX_BODY=$(./cleos.sh push action eosio setram '[1]' -p eosio -s -d -j 2>/dev/null)
 TRX_BODY=$(echo $TRX_BODY | jq -c '.expiration=$expire | del(.actions[])' --arg expire "$expire_date")
 
+echo $TRX_BODY > trx.json
+
 while read actions; do
     act_res=$(eval $actions -j -s -d  2>/dev/null)
     echo $act_res > acts.json
